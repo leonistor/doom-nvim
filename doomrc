@@ -18,7 +18,7 @@ Doom = {
 	-- false : Disable format on save
 	-- true  : Enable format on save
 	-- @default = false
-	fmt_on_save = false,
+	fmt_on_save = true,
 
 	-- Autosave sessions
 	-- false : Disable session autosave
@@ -55,7 +55,7 @@ Doom = {
     -- false : disables show mode
     -- true  : enables show mode
     -- @default = false
-    show_mode = false,
+    show_mode = true,
 
     -- Enable scroll off
     -- false : disables scroll off
@@ -74,13 +74,13 @@ Doom = {
 	-- false : Disable preservation of last editing position
 	-- true  : Enable preservation of last editing position
 	-- @default = false
-	preserve_edit_pos = false,
+	preserve_edit_pos = true,
 
     -- horizontal split on creating a new file (<Leader>fn)
     -- false : doesn't split the window when creating a new file
     -- true  : horizontal split on creating a new file
     -- @default = true
-    new_file_split = true,
+    new_file_split = false,
 
     -- enable current line highlight
     -- false : disables current line highlight
@@ -175,11 +175,11 @@ Doom = {
 	-- Set max cols
 	-- Defines the column to show a vertical marker
 	-- @default = 80
-	max_columns = 80,
+	max_columns = 100,
 
     -- Completion box height
 	-- @default = 10
-	complete_size = 10,
+	complete_size = 12,
 
     -- Completion box transparency
     -- 0 = no transparency
@@ -277,13 +277,15 @@ Doom = {
 	-- @default = {'lazygit', 'minimap', 'restclient', 'doom-themes'}
 	-- example:
 	--   disabled_plugins = {'emmet-vim'}
-	disabled_plugins = { 'lazygit', 'minimap', 'restclient', 'doom-themes'},
+	-- disabled_plugins = { 'lazygit', 'minimap', 'restclient', 'doom-themes'},
+	disabled_plugins = {  'minimap', 'restclient'},
 
 	-- Disabled plugins modules
 	-- @default = {'git', 'lsp', 'web'}
 	-- example:
 	--   disabled_modules = {'web'}
-	disabled_modules = { 'git', 'lsp', 'web' },
+	-- disabled_modules = { 'git', 'lsp', 'web' },
+	disabled_modules = {},
 
 	-- Install custom plugins
 	-- @default = {}
@@ -297,13 +299,26 @@ Doom = {
 	--              ['enabled'] = true,
 	--           }
 	--       }
-	custom_plugins = {},
+	custom_plugins = {
+		{
+		    ['repo'] = 'hrsh7th/vim-vsnip',
+		    ['enabled'] = true,
+		},
+		{
+		    ['repo'] = 'hrsh7th/vim-vsnip-integ',
+		    ['enabled'] = true,
+		},
+		{
+		    ['repo'] = 'rafamadriz/friendly-snippets',
+		    ['enabled'] = true,
+		},
+    },
 
 	-- Set the parsers for TreeSitter
 	-- @default = {}
 	-- example:
 	--   ts_parsers = {'python', 'javascript'}
-	ts_parsers = {},
+	ts_parsers = {'go'},
 
     -- Set your custom dashboard header below
     -- @default = doom emacs' default dashboard header
