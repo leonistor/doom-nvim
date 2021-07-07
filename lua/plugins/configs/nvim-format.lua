@@ -112,4 +112,9 @@ require('format').setup({
 			cmd = { 'prettier -w --parser yaml' },
 		},
 	},
+    vlang = {
+        {
+            cmd = { 'v fmt -w' },
+        },
+    }
 })

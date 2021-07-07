@@ -312,6 +312,14 @@ Doom = {
 		    ['repo'] = 'rafamadriz/friendly-snippets',
 		    ['enabled'] = true,
 		},
+        {
+		    ['repo'] = 'cespare/vim-toml',
+		    ['enabled'] = true,
+        },
+        {
+		    ['repo'] = 'cheap-glitch/vim-v',
+		    ['enabled'] = true,
+        },
     },
 
 	-- Set the parsers for TreeSitter
@@ -344,4 +352,11 @@ Doom = {
 	" `''                                                                      ``'  ",
 	'                                                                               ',
     },
+}
+
+
+Neovim = {
+    global_variables = {
+        ['v_warnings'] = 1,
+    }
 }
