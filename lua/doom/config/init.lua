@@ -1,10 +1,10 @@
 ---[[---------------------------------------]]---
 --          config - Core of Doom Nvim         --
 --              Author: NTBBloodbath           --
---              License: MIT                   --
+--              License: GPLv2                   --
 ---[[---------------------------------------]]---
 -- Doom Nvim version
-Doom_version = '2.3.4'
+Doom_version = '2.3.5'
 
 -- Check if running Neovim or Vim and fails if:
 --  1. Running Vim instead of Neovim

@@ -2,7 +2,7 @@
 #================================================
 # install.sh - Doom Nvim Installation Script
 # Author: NTBBloodbath
-# License: MIT
+# License: GPLv2
 #================================================
 
 # Terminal Colors
@@ -32,7 +32,7 @@ BYellow='\033[1;33m' # Yellow
 # }}}
 
 # Doom Nvim version
-DoomNvimVersion='2.3.4'
+DoomNvimVersion='2.3.5'
 # System OS
 System="$(uname -s)"
 
